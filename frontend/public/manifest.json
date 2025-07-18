@@ -1,0 +1,144 @@
+{
+  "short_name": "RecipeGenius",
+  "name": "RecipeGenius - Smart Recipe Generator & Grocery Planner",
+  "description": "AI-powered recipe generator with smart grocery planning and pantry management",
+  "icons": [
+    {
+      "src": "favicon.ico",
+      "sizes": "64x64 32x32 24x24 16x16",
+      "type": "image/x-icon"
+    },
+    {
+      "src": "logo192.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "logo512.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ],
+  "start_url": "/",
+  "display": "standalone",
+  "display_override": ["window-controls-overlay"],
+  "theme_color": "#059669",
+  "background_color": "#f9fafb",
+  "orientation": "portrait-primary",
+  "scope": "/",
+  "lang": "en-US",
+  "categories": ["food", "productivity", "lifestyle"],
+  "screenshots": [
+    {
+      "src": "screenshot1.png",
+      "sizes": "1280x720",
+      "type": "image/png",
+      "form_factor": "wide",
+      "label": "Recipe search and discovery"
+    },
+    {
+      "src": "screenshot2.png",
+      "sizes": "750x1334",
+      "type": "image/png",
+      "form_factor": "narrow",
+      "label": "Grocery list management"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Add Recipe",
+      "short_name": "Add Recipe",
+      "description": "Quickly add a new recipe",
+      "url": "/recipes/add",
+      "icons": [
+        {
+          "src": "add-recipe-icon.png",
+          "sizes": "96x96"
+        }
+      ]
+    },
+    {
+      "name": "Grocery List",
+      "short_name": "Grocery",
+      "description": "View and manage grocery list",
+      "url": "/grocery-list",
+      "icons": [
+        {
+          "src": "grocery-icon.png",
+          "sizes": "96x96"
+        }
+      ]
+    },
+    {
+      "name": "Pantry",
+      "short_name": "Pantry",
+      "description": "Manage pantry items",
+      "url": "/pantry",
+      "icons": [
+        {
+          "src": "pantry-icon.png",
+          "sizes": "96x96"
+        }
+      ]
+    },
+    {
+      "name": "Recipe Search",
+      "short_name": "Search",
+      "description": "Search for recipes",
+      "url": "/recipes/search",
+      "icons": [
+        {
+          "src": "search-icon.png",
+          "sizes": "96x96"
+        }
+      ]
+    }
+  ],
+  "share_target": {
+    "action": "/share",
+    "method": "POST",
+    "enctype": "multipart/form-data",
+    "params": {
+      "title": "title",
+      "text": "text",
+      "url": "url",
+      "files": [
+        {
+          "name": "image",
+          "accept": ["image/*"]
+        }
+      ]
+    }
+  },
+  "protocol_handlers": [
+    {
+      "protocol": "web+recipe",
+      "url": "/recipes/import?url=%s"
+    }
+  ],
+  "prefer_related_applications": false,
+  "related_applications": [
+    {
+      "platform": "play",
+      "url": "https://play.google.com/store/apps/details?id=com.recipegenius.app",
+      "id": "com.recipegenius.app"
+    }
+  ],
+  "file_handlers": [
+    {
+      "action": "/handle-file",
+      "accept": {
+        "application/pdf": [".pdf"],
+        "text/plain": [".txt"],
+        "application/json": [".json"]
+      }
+    }
+  ],
+  "edge_side_panel": {
+    "preferred_width": 400
+  },
+  "launch_handler": {
+    "client_mode": "focus-existing"
+  },
+  "handle_links": "preferred"
+}
