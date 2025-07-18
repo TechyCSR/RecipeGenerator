@@ -11,7 +11,8 @@ import {
   MicrophoneIcon,
   ClockIcon,
   HeartIcon,
-  StarIcon
+  StarIcon,
+  HomeIcon
 } from '@heroicons/react/24/outline';
 import { recipeApi } from '../services/api';
 import RecipeCard from '../components/Recipe/RecipeCard';

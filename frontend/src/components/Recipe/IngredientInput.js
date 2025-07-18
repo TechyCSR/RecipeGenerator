@@ -1,6 +1,5 @@
 import React, { useState, useRef } from 'react';
 import { XMarkIcon, MicrophoneIcon, CameraIcon } from '@heroicons/react/24/outline';
-import { useSpeechSynthesis } from 'react-speech-kit';
 
 const IngredientInput = ({ 
   ingredients = [], 

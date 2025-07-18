@@ -33,6 +33,6 @@
   },
   "homepage": "https://github.com/TechyCSR/RecipeGenerator#readme",
   "devDependencies": {
-    "concurrently": "^8.2.0"
+    "concurrently": "^8.2.2"
   }
 }
