@@ -6,8 +6,6 @@ import {
   BookmarkIcon,
   ShoppingCartIcon,
   ArchiveBoxIcon,
-  UserIcon,
-  ChartBarIcon,
   Cog6ToothIcon,
   XMarkIcon
 } from '@heroicons/react/24/outline';
@@ -23,8 +21,6 @@ const Sidebar = () => {
     { name: 'My Cookbook', href: '/saved-recipes', icon: BookmarkIcon },
     { name: 'Grocery Lists', href: '/grocery-lists', icon: ShoppingCartIcon },
     { name: 'Pantry', href: '/pantry', icon: ArchiveBoxIcon },
-    { name: 'Analytics', href: '/analytics', icon: ChartBarIcon },
-    { name: 'Profile', href: '/profile', icon: UserIcon },
   ];
 
   const isActive = (path) => {
