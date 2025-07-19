@@ -1,38 +1,44 @@
 import React, { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 import { HeartIcon } from '@heroicons/react/24/outline';
 import { HeartIcon as HeartSolidIcon } from '@heroicons/react/24/solid';
 
 const SavedRecipes = () => {
+  const navigate = useNavigate();
   const [savedRecipes] = useState([
     { 
-      id: 1, 
+      id: 511728, 
       title: 'Spaghetti Carbonara', 
       image: 'https://img.spoonacular.com/recipes/511728-312x231.jpg', 
       readyInMinutes: 20,
       summary: 'A classic Italian pasta dish with eggs, cheese, and pancetta.'
     },
     { 
-      id: 2, 
+      id: 715543, 
       title: 'Chicken Teriyaki Bowl', 
       image: 'https://img.spoonacular.com/recipes/715543-312x231.jpg', 
       readyInMinutes: 25,
       summary: 'Delicious grilled chicken with teriyaki sauce over rice.'
     },
     { 
-      id: 3, 
+      id: 157344, 
       title: 'Chocolate Chip Cookies', 
       image: 'https://img.spoonacular.com/recipes/157344-312x231.jpg', 
       readyInMinutes: 15,
       summary: 'Classic homemade chocolate chip cookies that are crispy on the outside and chewy on the inside.'
     },
     { 
-      id: 4, 
+      id: 715415, 
       title: 'Caesar Salad', 
       image: 'https://img.spoonacular.com/recipes/715415-312x231.jpg', 
       readyInMinutes: 10,
       summary: 'Fresh romaine lettuce with parmesan cheese and creamy caesar dressing.'
     },
   ]);
+
+  const handleViewRecipe = (recipeId) => {
+    navigate(`/recipe/${recipeId}`);
+  };
 
   return (
     <div className="min-h-screen bg-gray-50 dark:bg-gray-900">
@@ -74,7 +80,10 @@ const SavedRecipes = () => {
                     <span className="text-green-600 dark:text-green-400 text-sm font-medium">
                       ⏱️ {recipe.readyInMinutes} minutes
                     </span>
-                    <button className="bg-blue-600 hover:bg-blue-700 text-white px-3 py-1 rounded-md text-sm transition-colors duration-200">
+                    <button 
+                      onClick={() => handleViewRecipe(recipe.id)}
+                      className="bg-blue-600 hover:bg-blue-700 text-white px-3 py-1 rounded-md text-sm transition-colors duration-200"
+                    >
                       View Recipe
                     </button>
                   </div>
