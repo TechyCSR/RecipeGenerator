@@ -1,0 +1,38 @@
+{
+  "name": "recipegenius-production",
+  "version": "1.0.0",
+  "description": "Production build of RecipeGenius",
+  "private": true,
+  "engines": {
+    "node": ">=18.0.0",
+    "npm": ">=8.0.0"
+  },
+  "scripts": {
+    "build": "npm run build:frontend",
+    "build:frontend": "cd frontend && npm run build:production",
+    "start": "cd backend && npm start",
+    "postinstall": "npm run install-all",
+    "install-all": "cd backend && npm ci && cd ../frontend && npm ci"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TechyCSR/RecipeGenerator.git"
+  },
+  "keywords": [
+    "recipe",
+    "generator",
+    "grocery",
+    "planner",
+    "react",
+    "nodejs",
+    "mongodb",
+    "vercel",
+    "production"
+  ],
+  "author": "TechyCSR <contact@techycsr.me>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/TechyCSR/RecipeGenerator/issues"
+  },
+  "homepage": "https://github.com/TechyCSR/RecipeGenerator#readme"
+}

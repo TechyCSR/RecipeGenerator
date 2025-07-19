@@ -1,8 +1,20 @@
 # 🍽️ RecipeGenius - Smart Recipe Generator & Grocery Planner
 
+[![Vercel](https://img.shields.io/badge/deployed%20on-Vercel-black)](https://vercel.com)
+[![React](https://img.shields.io/badge/React-18.2.0-blue)](https://reactjs.org)
+[![Node.js](https://img.shields.io/badge/Node.js-18+-green)](https://nodejs.org)
+[![MongoDB](https://img.shields.io/badge/MongoDB-Atlas-green)](https://mongodb.com)
+[![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
+
 A comprehensive MERN stack application that revolutionizes meal planning and grocery shopping with AI-powered recipe suggestions, smart pantry management, and seamless grocery list generation.
 
-## � Features
+## 🚀 Live Demo
+
+- **Frontend**: [https://recipegenius.vercel.app](https://recipegenius.vercel.app)
+- **API**: [https://recipegenius-api.vercel.app](https://recipegenius-api.vercel.app)
+- **Health Check**: [https://recipegenius-api.vercel.app/health](https://recipegenius-api.vercel.app/health)
+
+## ✨ Features
 
 ### 🔍 Recipe Discovery & Management
 - **AI-Powered Recipe Suggestions**: Get personalized recipe recommendations based on your ingredients
