@@ -3,7 +3,32 @@
 <div align="center">
 
 [![Portfolio](https://img.shields.io/badge/Developer-@TechyCSR-ff6b35?style=for-the-badge&logo=web&logoColor=white)](https://techycsr.me)
-[![Frontend](https://img.shields.io/badg---
+[![Frontend](https://img.shields.io/badge/Frontend-LIVE-00C851?style=for-the-badge&logo=vercel&logoColor=white)](https://recipe.techycsr.me)
+[![Backend](https://img.shields.io/badge/Backend-LIVE-00C851?style=for-the-badge&logo=vercel&logoColor=white)](https://apis.recipe.techycsr.me)
+[![Health](https://img.shields.io/badge/API-Healthy-4CAF50?style=for-the-badge&logo=heart&logoColor=white)](https://apis.recipe.techycsr.me/health)
+
+**Enterprise-grade MERN stack application demonstrating advanced full-stack development capabilities, cloud deployment, and modern web technologies.**
+
+**Developed by [@TechyCSR](https://techycsr.me) • [📧 Contact](mailto:contact@techycsr.me) • [🌐 Portfolio](https://techycsr.me)**
+
+</div>
+
+---
+
+## 📋 **TECHNICAL OVERVIEW FOR MENTORS**
+
+**RecipeGenius** is a production-ready, scalable web application showcasing comprehensive full-stack development skills. Built using modern MERN stack architecture with cloud-native deployment, demonstrating expertise in React.js, Node.js, MongoDB, API integration, and DevOps practices.
+
+### 🎯 **Key Technical Achievements**
+- ✅ **Production Deployment**: Live on custom domains with SSL
+- ✅ **Scalable Architecture**: Serverless functions + Cloud database
+- ✅ **API Integration**: External APIs (Spoonacular) + Custom REST API
+- ✅ **Modern Frontend**: React 18.2 + Tailwind CSS + PWA capabilities
+- ✅ **Database Design**: MongoDB with optimized schemas and indexing
+- ✅ **Security Implementation**: Authentication, CORS, rate limiting
+- ✅ **Performance Optimization**: <200ms API response, 95+ Lighthouse score
+
+---
 
 ## 📡 **COMPLETE API DOCUMENTATION**
 
@@ -192,11 +217,9 @@ Monitoring:
   Performance Monitoring: Real-time
   Error Tracking: Comprehensive logging
   Alerting: Slack/Email notifications
-```LIVE-00C851?style=for-the-badge&logo=vercel&logoColor=white)](https://recipe.techycsr.me)
-[![Backend](https://img.shields.io/badge/Backend-LIVE-00C851?style=for-the-badge&logo=vercel&logoColor=white)](https://apis.recipe.techycsr.me)
-[![Health](https://img.shields.io/badge/API-Healthy-4CAF50?style=for-the-badge&logo=heart&logoColor=white)](https://apis.recipe.techycsr.me/health)
+```
 
-**Enterprise-grade MERN stack application demonstrating advanced full-stack development capabilities, cloud deployment, and modern web technologies.**
+---
 
 **Developed by [@TechyCSR](https://techycsr.me) • [📧 Contact](mailto:contact@techycsr.me) • [🌐 Portfolio](https://techycsr.me)**
 
