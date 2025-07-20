@@ -31,28 +31,14 @@ const Pantry = lazy(() => import('./pages/Pantry'));
 // Initialize Clerk with error handling
 const clerkPubKey = process.env.REACT_APP_CLERK_PUBLISHABLE_KEY;
 
-console.log('Environment check:', {
-  nodeEnv: process.env.NODE_ENV,
-  clerkKeyExists: !!clerkPubKey,
-  clerkKeyLength: clerkPubKey?.length || 0,
-  clerkKeyStart: clerkPubKey?.substring(0, 8) || 'missing'
-});
-
 if (!clerkPubKey) {
   console.error('Missing Clerk Publishable Key');
-  // Don't throw error in production, just log it
-  if (process.env.NODE_ENV === 'development') {
-    console.warn('Missing Clerk Publishable Key - Please check your environment variables');
-  }
+  throw new Error('Missing Clerk Publishable Key - Please check your environment variables');
 }
 
 // Register service worker for PWA in production
 if (process.env.NODE_ENV === 'production' && 'serviceWorker' in navigator) {
-  try {
-    registerSW();
-  } catch (error) {
-    console.warn('Service worker registration failed:', error);
-  }
+  registerSW();
 }
 
 // Loading component for suspense
@@ -73,26 +59,6 @@ function App() {
       document.documentElement.classList.remove('dark');
     }
   }, [darkMode.value]);
-
-  // If no Clerk key, show basic version
-  if (!clerkPubKey) {
-    return (
-      <Router>
-        <div className="min-h-screen bg-gray-50 dark:bg-gray-900 transition-colors duration-300">
-          <div className="flex items-center justify-center min-h-screen">
-            <div className="text-center">
-              <h1 className="text-4xl font-bold text-gray-900 dark:text-white mb-4">
-                🍽️ RecipeGenius
-              </h1>
-              <p className="text-red-600 dark:text-red-400">
-                Authentication service is not configured. Please check environment variables.
-              </p>
-            </div>
-          </div>
-        </div>
-      </Router>
-    );
-  }
 
   return (
     <ErrorBoundary>

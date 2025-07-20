@@ -1,43 +1,94 @@
 import axios from 'axios';
 
-// Create axios instance
+// Get API URL with fallback
+const getApiUrl = () => {
+  if (process.env.NODE_ENV === 'production') {
+    return process.env.REACT_APP_API_URL || 'https://apis.recipe.techycsr.me';
+  }
+  return process.env.REACT_APP_API_URL || 'http://localhost:5000';
+};
+
+// Create axios instance with robust configuration
 const api = axios.create({
-  baseURL: process.env.REACT_APP_API_URL || 'http://localhost:5000',
+  baseURL: getApiUrl(),
   timeout: 30000,
   headers: {
     'Content-Type': 'application/json',
   },
+  // Enable credentials for cross-origin requests
+  withCredentials: false,
 });
 
-// Request interceptor to add auth token
+// Request interceptor to add auth token and handle errors
 api.interceptors.request.use(
   async (config) => {
-    // Add Clerk session token if available
-    if (window.Clerk) {
-      try {
-        const token = await window.Clerk.session?.getToken();
+    try {
+      // Add Clerk session token if available
+      if (window.Clerk?.session) {
+        const token = await window.Clerk.session.getToken();
         if (token) {
           config.headers.Authorization = `Bearer ${token}`;
         }
-      } catch (error) {
-        console.warn('Failed to get Clerk token:', error);
       }
+    } catch (error) {
+      console.warn('Failed to get Clerk token:', error);
     }
+    
+    // Add request timestamp for debugging
+    config.metadata = { startTime: new Date() };
+    
     return config;
   },
   (error) => {
+    console.error('Request interceptor error:', error);
     return Promise.reject(error);
   }
 );
 
-// Response interceptor for error handling
+// Response interceptor with enhanced error handling
 api.interceptors.response.use(
-  (response) => response,
-  (error) => {
-    if (error.response?.status === 401) {
-      // Handle unauthorized access
-      window.location.href = '/sign-in';
+  (response) => {
+    // Log response time in development
+    if (process.env.NODE_ENV === 'development' && response.config.metadata) {
+      const duration = new Date() - response.config.metadata.startTime;
+      console.log(`API Request: ${response.config.method?.toUpperCase()} ${response.config.url} - ${duration}ms`);
     }
+    return response;
+  },
+  async (error) => {
+    // Enhanced error handling
+    if (error.response) {
+      const { status, data } = error.response;
+      
+      switch (status) {
+        case 401:
+          // Handle unauthorized access
+          console.warn('Unauthorized access - redirecting to sign in');
+          if (window.location.pathname !== '/sign-in') {
+            window.location.href = '/sign-in';
+          }
+          break;
+        case 403:
+          console.error('Forbidden access:', data);
+          break;
+        case 404:
+          console.warn('Resource not found:', error.config?.url);
+          break;
+        case 429:
+          console.warn('Rate limit exceeded');
+          break;
+        case 500:
+          console.error('Server error:', data);
+          break;
+        default:
+          console.error('API error:', status, data);
+      }
+    } else if (error.request) {
+      console.error('Network error - no response received:', error.request);
+    } else {
+      console.error('Request setup error:', error.message);
+    }
+    
     return Promise.reject(error);
   }
 );

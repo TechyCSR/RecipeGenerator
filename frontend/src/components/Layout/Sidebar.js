@@ -6,7 +6,6 @@ import {
   BookmarkIcon,
   ShoppingCartIcon,
   ArchiveBoxIcon,
-  Cog6ToothIcon,
   XMarkIcon
 } from '@heroicons/react/24/outline';
 import { useUIStore } from '../../store';

@@ -1,9 +1,8 @@
 {
-  "name": "recipegenius-frontend",
   "rewrites": [
     {
-      "source": "/api/(.*)",
-      "destination": "https://recipegenius-backend.vercel.app/api/$1"
+      "source": "/((?!api/).*)",
+      "destination": "/index.html"
     }
   ],
   "redirects": [
