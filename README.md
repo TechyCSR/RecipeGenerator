@@ -9,7 +9,7 @@
 
 **Enterprise-grade MERN stack application demonstrating advanced full-stack development capabilities, cloud deployment, and modern web technologies.**
 
-**Developed by [@TechyCSR](https://techycsr.me) • [📧 Contact](mailto:contact@techycsr.me) • [🌐 Portfolio](https://techycsr.me)**
+**Developed by [@TechyCSR](https://techycsr.me) • [📧 Contact](mailto:dev@techycsr.me) • [🌐 Portfolio](https://techycsr.me)**
 
 </div>
 
@@ -792,110 +792,6 @@ npm run test:e2e
 
 ---
 
-## 🤝 **CONTRIBUTION GUIDELINES**
-
-### **🛠️ Development Workflow**
-
-```bash
-# 1. Fork and clone the repository
-git clone https://github.com/YourUsername/RecipeGenerator.git
-cd RecipeGenerator
-
-# 2. Create a feature branch
-git checkout -b feature/amazing-new-feature
-
-# 3. Make changes and commit
-git add .
-git commit -m "feat: add amazing new feature"
-
-# 4. Push and create pull request
-git push origin feature/amazing-new-feature
-```
-
-### **� Code Standards**
-- **Naming**: Use camelCase for variables, PascalCase for components
-- **Comments**: Document complex logic and API integrations
-- **Testing**: Write tests for new features and bug fixes
-- **Performance**: Consider performance impact of changes
-- **Security**: Follow security best practices for user data
-
-### **🔄 Pull Request Template**
-```markdown
-## Description
-Brief description of changes
-
-## Type of Change
-- [ ] Bug fix
-- [ ] New feature
-- [ ] Performance improvement
-- [ ] Documentation update
-
-## Testing
-- [ ] Local testing completed
-- [ ] All existing tests pass
-- [ ] New tests added (if applicable)
-
-## Screenshots (if applicable)
-Add screenshots of UI changes
-```
-
----
-
-## � **LEARNING RESOURCES**
-
-### **🎯 For Students & Developers**
-- **React.js**: [Official Documentation](https://reactjs.org/docs)
-- **Node.js/Express**: [Express.js Guide](https://expressjs.com/en/guide/routing.html)
-- **MongoDB**: [MongoDB University](https://university.mongodb.com/)
-- **Deployment**: [Vercel Documentation](https://vercel.com/docs)
-
-### **� Project-Specific Resources**
-- **Spoonacular API**: [API Documentation](https://spoonacular.com/food-api/docs)
-- **Tailwind CSS**: [Utility Classes Reference](https://tailwindcss.com/docs)
-- **React Router**: [Navigation Guide](https://reactrouter.com/en/main)
-
----
-
-## 🐛 **TROUBLESHOOTING**
-
-<details>
-<summary><strong>🔧 Common Issues & Solutions</strong></summary>
-
-**API Connection Issues:**
-```bash
-# Check environment variables
-cat backend/.env | grep API_KEY
-
-# Test API connectivity
-curl https://apis.recipe.techycsr.me/health
-
-# Verify MongoDB connection
-node -e "console.log(process.env.MONGODB_URI)"
-```
-
-**Frontend Build Issues:**
-```bash
-# Clear cache and reinstall
-rm -rf node_modules package-lock.json
-npm install
-
-# Check for dependency conflicts
-npm ls
-```
-
-**Deployment Issues:**
-```bash
-# Verify Vercel configuration
-cat vercel.json
-
-# Check deployment logs
-vercel logs
-```
-
-</details>
-
----
-
 ## 📄 **LICENSE & CREDITS**
 
 ### **� License**
@@ -909,9 +805,8 @@ This project is licensed under the **MIT License** - see the [LICENSE](LICENSE) 
 - **Tailwind CSS** - Utility-first CSS framework
 
 ### **👨‍💻 Project Team**
-- **Developer**: TechyCSR
+- **Developer**: @TechyCSR
 - **Repository**: [github.com/TechyCSR/RecipeGenerator](https://github.com/TechyCSR/RecipeGenerator)
-- **Contact**: [Contact Information]
 
 ---
 
