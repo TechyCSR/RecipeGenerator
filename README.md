@@ -2,14 +2,14 @@
 
 <div align="center">
 
-[![Portfolio](https://img.shields.io/badge/Developer-@TechyCSR-ff6b35?style=for-the-badge&logo=web&logoColor=white)](https://techycsr.me)
-[![Frontend](https://img.shields.io/badge/Frontend-LIVE-00C851?style=for-the-badge&logo=vercel&logoColor=white)](https://recipe.techycsr.me)
-[![Backend](https://img.shields.io/badge/Backend-LIVE-00C851?style=for-the-badge&logo=vercel&logoColor=white)](https://apis.recipe.techycsr.me)
-[![Health](https://img.shields.io/badge/API-Healthy-4CAF50?style=for-the-badge&logo=heart&logoColor=white)](https://apis.recipe.techycsr.me/health)
+[![Portfolio](https://img.shields.io/badge/Developer-@TechyCSR-ff6b35?style=for-the-badge&logo=web&logoColor=white)](https://techycsr.dev)
+[![Frontend](https://img.shields.io/badge/Frontend-LIVE-00C851?style=for-the-badge&logo=vercel&logoColor=white)](https://recipe.techycsr.dev)
+[![Backend](https://img.shields.io/badge/Backend-LIVE-00C851?style=for-the-badge&logo=vercel&logoColor=white)](https://apis.recipe.techycsr.dev)
+[![Health](https://img.shields.io/badge/API-Healthy-4CAF50?style=for-the-badge&logo=heart&logoColor=white)](https://apis.recipe.techycsr.dev/health)
 
 **Enterprise-grade MERN stack application demonstrating advanced full-stack development capabilities, cloud deployment, and modern web technologies.**
 
-**Developed by [@TechyCSR](https://techycsr.me) • [📧 Contact](mailto:dev@techycsr.me) • [🌐 Portfolio](https://techycsr.me)**
+**Developed by [@TechyCSR](https://techycsr.dev) • [📧 Contact](mailto:info@techycsr.dev) • [🌐 Portfolio](https://techycsr.dev)**
 
 </div>
 
@@ -33,7 +33,7 @@
 ## 📡 **COMPLETE API DOCUMENTATION**
 
 ### **🌐 Live API Endpoints**
-**Base URL**: `https://apis.recipe.techycsr.me`
+**Base URL**: `https://apis.recipe.techycsr.dev`
 
 ### **🏥 System & Health Endpoints**
 | Endpoint | Method | Description | Response Format |
@@ -69,12 +69,12 @@
 
 #### **GET Request - Simple Search**
 ```bash
-curl "https://apis.recipe.techycsr.me/api/recipes/search?ingredients=chicken,tomato,garlic&maxTime=30"
+curl "https://apis.recipe.techycsr.dev/api/recipes/search?ingredients=chicken,tomato,garlic&maxTime=30"
 ```
 
 #### **POST Request - Advanced Search**
 ```bash
-curl -X POST https://apis.recipe.techycsr.me/api/recipes/search \
+curl -X POST https://apis.recipe.techycsr.dev/api/recipes/search \
   -H "Content-Type: application/json" \
   -d '{
     "ingredients": ["chicken", "tomato", "garlic"],
@@ -221,7 +221,7 @@ Monitoring:
 
 ---
 
-**Developed by [@TechyCSR](https://techycsr.me) • [📧 Contact](mailto:contact@techycsr.me) • [🌐 Portfolio](https://techycsr.me)**
+**Developed by [@TechyCSR](https://techycsr.dev) • [📧 Contact](mailto:contact@techycsr.me) • [🌐 Portfolio](https://techycsr.dev)**
 
 </div>
 
@@ -427,14 +427,14 @@ graph TB
 ```yaml
 Frontend Deployment:
   Platform: Vercel Edge Network
-  URL: https://recipe.techycsr.me
+  URL: https://recipe.techycsr.dev
   CDN: Global Edge Locations
   SSL: Automatic HTTPS
   Domain: Custom Domain Configured
   
 Backend Deployment:
   Platform: Vercel Serverless Functions
-  URL: https://apis.recipe.techycsr.me
+  URL: https://apis.recipe.techycsr.dev
   Runtime: Node.js 18.x
   Region: Auto-scaling Global
   API Routes: /api/* endpoints
@@ -458,7 +458,7 @@ NODE_ENV=production
 MONGODB_URI=mongodb+srv://atlas-cluster
 SPOONACULAR_API_KEY=live-api-key
 CLERK_SECRET_KEY=production-secret
-CORS_ORIGIN=https://recipe.techycsr.me
+CORS_ORIGIN=https://recipe.techycsr.dev
 ```
 ---
 
@@ -467,10 +467,10 @@ CORS_ORIGIN=https://recipe.techycsr.me
 ### **🎯 For Mentors & Reviewers**
 
 **Instant Access (No Setup Required):**
-1. 🌐 **Frontend**: Visit [recipe.techycsr.me](https://recipe.techycsr.me)
-2. 🔍 **Try Recipe Search**: Go to [recipe.techycsr.me/search](https://recipe.techycsr.me/search)
-3. 🔌 **API Health**: Check [apis.recipe.techycsr.me/health](https://apis.recipe.techycsr.me/health)
-4. 📊 **Test API**: Try `curl https://apis.recipe.techycsr.me/api/recipes/search?ingredients=chicken,tomato`
+1. 🌐 **Frontend**: Visit [recipe.techycsr.me](https://recipe.techycsr.dev)
+2. 🔍 **Try Recipe Search**: Go to [recipe.techycsr.me/search](https://recipe.techycsr.dev/search)
+3. 🔌 **API Health**: Check [apis.recipe.techycsr.me/health](https://apis.recipe.techycsr.dev/health)
+4. 📊 **Test API**: Try `curl https://apis.recipe.techycsr.dev/api/recipes/search?ingredients=chicken,tomato`
 
 ### **🛠️ For Developers (Local Setup)**
 
@@ -529,7 +529,7 @@ CORS_ORIGIN=http://localhost:3000
 ```bash
 # API Configuration
 REACT_APP_API_URL=http://localhost:5000
-# Or for production: https://apis.recipe.techycsr.me
+# Or for production: https://apis.recipe.techycsr.dev
 
 # Authentication
 REACT_APP_CLERK_PUBLISHABLE_KEY=your_clerk_publishable_key
@@ -723,8 +723,8 @@ npm run test:e2e
 ### **🔍 Quick Project Assessment**
 
 **Evaluation Checklist:**
-- [ ] ✅ **Live Demo Accessible**: [recipe.techycsr.me](https://recipe.techycsr.me)
-- [ ] ✅ **Backend API Functional**: [apis.recipe.techycsr.me/health](https://apis.recipe.techycsr.me/health) 
+- [ ] ✅ **Live Demo Accessible**: [recipe.techycsr.me](https://recipe.techycsr.dev)
+- [ ] ✅ **Backend API Functional**: [apis.recipe.techycsr.me/health](https://apis.recipe.techycsr.dev/health) 
 - [ ] ✅ **Recipe Search Working**: Test ingredient-based search
 - [ ] ✅ **Responsive Design**: Check mobile/desktop compatibility
 - [ ] ✅ **Code Quality**: Review GitHub repository structure
@@ -772,7 +772,7 @@ npm run test:e2e
 
 1. **Recipe Discovery Flow**:
    ```
-   1. Visit: https://recipe.techycsr.me/search
+   1. Visit: https://recipe.techycsr.dev/search
    2. Enter: "chicken, tomato, garlic"
    3. Observe: Real-time API integration with Spoonacular
    4. Test: Filter options and result pagination
@@ -780,12 +780,12 @@ npm run test:e2e
 
 2. **API Testing**:
    ```bash
-   curl "https://apis.recipe.techycsr.me/api/recipes/search?ingredients=pasta,cheese"
+   curl "https://apis.recipe.techycsr.dev/api/recipes/search?ingredients=pasta,cheese"
    ```
 
 3. **Mobile Responsiveness**:
    ```
-   1. Open: https://recipe.techycsr.me
+   1. Open: https://recipe.techycsr.dev
    2. Test: Resize browser window or use mobile device
    3. Verify: Layout adapts properly across screen sizes
    ```
