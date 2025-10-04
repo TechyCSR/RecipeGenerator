@@ -48,8 +48,8 @@ app.use(compression());
 const allowedOrigins = process.env.ALLOWED_ORIGINS 
   ? process.env.ALLOWED_ORIGINS.split(',')
   : [
-      process.env.FRONTEND_URL || 'https://recipe.techycsr.me',
-      'https://recipe.techycsr.me'
+      process.env.FRONTEND_URL || 'https://recipe.techycsr.dev',
+      'https://recipe.techycsr.dev'
     ];
 
 app.use(cors({

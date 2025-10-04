@@ -3,7 +3,7 @@ import axios from 'axios';
 // Get API URL with fallback
 const getApiUrl = () => {
   if (process.env.NODE_ENV === 'production') {
-    return process.env.REACT_APP_API_URL || 'https://apis.recipe.techycsr.me';
+    return process.env.REACT_APP_API_URL || 'https://apis.recipe.techycsr.dev';
   }
   return process.env.REACT_APP_API_URL || 'http://localhost:5000';
 };
