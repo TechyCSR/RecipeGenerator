@@ -11,7 +11,7 @@ const Footer = () => {
             <HeartIcon className="h-4 w-4 text-red-500 inline-block mx-1" />
             {' '}by{' '}
             <a 
-              href="https://techycsr.me" 
+              href="https://techycsr.dev" 
               target="_blank" 
               rel="noopener noreferrer"
               className="text-blue-600 dark:text-blue-400 hover:text-blue-700 dark:hover:text-blue-300 font-medium transition-colors"

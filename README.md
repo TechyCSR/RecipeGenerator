@@ -221,7 +221,7 @@ Monitoring:
 
 ---
 
-**Developed by [@TechyCSR](https://techycsr.dev) • [📧 Contact](mailto:contact@techycsr.me) • [🌐 Portfolio](https://techycsr.dev)**
+**Developed by [@TechyCSR](https://techycsr.dev) • [📧 Contact](mailto:info@techycsr.dev) • [🌐 Portfolio](https://techycsr.dev)**
 
 </div>
 
@@ -254,8 +254,8 @@ graph TB
     end
     
     subgraph "☁️ Vercel Edge Network"
-        C[Frontend Hosting<br/>recipe.techycsr.me]
-        D[API Gateway<br/>apis.recipe.techycsr.me]
+        C[Frontend Hosting<br/>recipe.techycsr.dev]
+        D[API Gateway<br/>apis.recipe.techycsr.dev]
     end
     
     subgraph "⚡ Backend Services"
@@ -467,9 +467,9 @@ CORS_ORIGIN=https://recipe.techycsr.dev
 ### **🎯 For Mentors & Reviewers**
 
 **Instant Access (No Setup Required):**
-1. 🌐 **Frontend**: Visit [recipe.techycsr.me](https://recipe.techycsr.dev)
-2. 🔍 **Try Recipe Search**: Go to [recipe.techycsr.me/search](https://recipe.techycsr.dev/search)
-3. 🔌 **API Health**: Check [apis.recipe.techycsr.me/health](https://apis.recipe.techycsr.dev/health)
+1. 🌐 **Frontend**: Visit [recipe.techycsr.dev](https://recipe.techycsr.dev)
+2. 🔍 **Try Recipe Search**: Go to [recipe.techycsr.dev/search](https://recipe.techycsr.dev/search)
+3. 🔌 **API Health**: Check [apis.recipe.techycsr.dev/health](https://apis.recipe.techycsr.dev/health)
 4. 📊 **Test API**: Try `curl https://apis.recipe.techycsr.dev/api/recipes/search?ingredients=chicken,tomato`
 
 ### **🛠️ For Developers (Local Setup)**
@@ -723,8 +723,8 @@ npm run test:e2e
 ### **🔍 Quick Project Assessment**
 
 **Evaluation Checklist:**
-- [ ] ✅ **Live Demo Accessible**: [recipe.techycsr.me](https://recipe.techycsr.dev)
-- [ ] ✅ **Backend API Functional**: [apis.recipe.techycsr.me/health](https://apis.recipe.techycsr.dev/health) 
+- [ ] ✅ **Live Demo Accessible**: [recipe.techycsr.dev](https://recipe.techycsr.dev)
+- [ ] ✅ **Backend API Functional**: [apis.recipe.techycsr.dev/health](https://apis.recipe.techycsr.dev/health) 
 - [ ] ✅ **Recipe Search Working**: Test ingredient-based search
 - [ ] ✅ **Responsive Design**: Check mobile/desktop compatibility
 - [ ] ✅ **Code Quality**: Review GitHub repository structure
@@ -794,7 +794,7 @@ npm run test:e2e
 
 ## 📄 **LICENSE & CREDITS**
 
-### **� License**
+### ** License**
 This project is licensed under the **MIT License** - see the [LICENSE](LICENSE) file for details.
 
 ### **🙏 Acknowledgments**

@@ -14,9 +14,9 @@ BLUE='\033[0;34m'
 NC='\033[0m' # No Color
 
 # Frontend URL
-FRONTEND_URL="https://recipe.techycsr.me"
+FRONTEND_URL="https://recipe.techycsr.dev"
 # Backend URL
-BACKEND_URL="https://apis.recipe.techycsr.me"
+BACKEND_URL="https://apis.recipe.techycsr.dev"
 
 echo -e "${BLUE}1. Testing Frontend Availability${NC}"
 echo "=================================="
