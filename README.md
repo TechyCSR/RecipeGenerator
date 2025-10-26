@@ -221,7 +221,7 @@ Monitoring:
 
 ---
 
-**Developed by [@TechyCSR](https://techycsr.dev) • [📧 Contact](mailto:info@techycsr.dev) • [🌐 Portfolio](https://techycsr.dev)**
+**Developed by [@TechyCSR](https://techycsr.dev)  • [🌐 Portfolio](https://techycsr.dev)**
 
 </div>
 
